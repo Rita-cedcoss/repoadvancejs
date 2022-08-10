@@ -22,6 +22,7 @@ for(i=0;i<arr.length;i++){
 }
 document.getElementById('tbleData').innerHTML=text;
 text="</table>"
+
 }
 
 
@@ -34,8 +35,11 @@ function deleteElement(args)
       
   arr.splice(index-1,1);
   populate();
+  if(arr.length==0)
+  {
+    document.getElementById('tbleData').innerHTML=" ";
 
-
+  }
 
 }
 
