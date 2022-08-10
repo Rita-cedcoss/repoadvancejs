@@ -1,7 +1,6 @@
-const arr=[{id:1, uname:"Rohit" ,salary:24000, upadateSalary:""},
-{id:2, uname:"Rohit" ,salary:24000, upadateSalary:""},
-{id:3, uname:"Rohit" ,salary:24000, upadateSalary:''},
-{id:4, uname:"Rohit" ,salary:24000, upadateSalary:''}
+const arr=[{id:1, uname:"Rohit" ,salary:4000, upadateSalary:""},
+{id:2, uname:"Rohit" ,salary:2000, upadateSalary:""},
+{id:3, uname:"Rohit" ,salary:1000, upadateSalary:''}
 ];
 // console.log(arr);
 function populate()
@@ -28,8 +27,8 @@ function Updatedsalary()
    {
     for(i=0;i<arr.length;i++)
     {
-     
-        var userSal=arr[i].salary*1.10;
+         val=
+         userSal=arr[i].salary*parseFloat("1.10");
         // console.log(userSal);
         arr[i].upadateSalary=userSal;
         
