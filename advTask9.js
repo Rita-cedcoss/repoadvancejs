@@ -14,7 +14,12 @@ function add()
     {
         throw "pleae enter alphabet";
     }
-    
+    if(id==""||uname==""||usalary=="")
+    {
+        throw "All fields must be filled";
+    }
+
+  
     const arr={ID:id,name:uname,salary:usalary};
     objArr.push(arr);
     console.log(objArr);
